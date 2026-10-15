@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d42a2a;
+}
+
+/* ── Phone-only layout clamp ── */
+body {
+  margin: 0;
+  background: #e8e8e8;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100svh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children  */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.reveal-stagger.revealed > *:nth-child(1) { opacity:1; transform:none; transition-delay: 0.05s; }
+.reveal-stagger.revealed > *:nth-child(2) { opacity:1; transform:none; transition-delay: 0.15s; }
+.reveal-stagger.revealed > *:nth-child(3) { opacity:1; transform:none; transition-delay: 0.25s; }
+.reveal-stagger.revealed > *:nth-child(4) { opacity:1; transform:none; transition-delay: 0.35s; }
+
+/* Slide-in from left */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide-in from right */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hide scrollbar globally for scroll strips */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Hero shimmer pulse on CTA button ── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+.btn-shimmer {
+  background: linear-gradient(90deg, #8b0000 30%, #c01e1e 50%, #8b0000 70%);
+  background-size: 200% auto;
+  animation: shimmer 2.2s linear infinite;
+}
+
+/* ── Pulse ring on phone icon ── */
+@keyframes ping-slow {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  80%  { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+.ping-slow { animation: ping-slow 2s ease-out infinite; }
+
+/* ── Floating badge animation ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-5px); }
+}
+.float-badge { animation: float 3s ease-in-out infinite; }
+
+/* ── Hero trust badge shimmer ── */
+@keyframes badge-shimmer {
+  0%  { background-position: -200%; }
+  100% { background-position: 200%; }
+}
+.badge-shimmer {
+  background: linear-gradient(90deg, #d42a2a8c 30%, #ffffff59 50%, #d42a2a8c 70%) 0 0 / 200%;
+  animation: badge-shimmer 2.2s linear infinite;
+}
+.badge-shimmer:nth-child(2) { animation-delay: 0.4s; }
+.badge-shimmer:nth-child(3) { animation-delay: 0.8s; }
+
+/* ── Hero CTA pulse ── */
+@keyframes cta-pulse {
+  0%   { transform: scale(1);    box-shadow: 0 4px 14px #d42a2a66; }
+  50%  { transform: scale(1.03); box-shadow: 0 6px 20px #d42a2a99; }
+  100% { transform: scale(1);    box-shadow: 0 4px 14px #d42a2a66; }
+}
+.cta-pulse { animation: cta-pulse 2s infinite; }
