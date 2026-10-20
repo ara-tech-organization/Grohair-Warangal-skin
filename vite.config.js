@@ -8,7 +8,7 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  base: '/Grohair-Mogappair-Skin/',
+  base: '/Grohair-Warangal-Skin/',
   build: {
     outDir: 'dist'
   }

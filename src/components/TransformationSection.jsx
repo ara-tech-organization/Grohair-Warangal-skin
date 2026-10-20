@@ -2,12 +2,10 @@ import { useState, useEffect, useRef } from 'react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const reviews = [
-  { name: "Vidhu Priya", time: 'GloSkin client', avatar: 'VP', color: '#c0001a', text: "I've been getting treatments for my dry skin (HydraFacial and Q-switch) here for the past 4 months, and my skin has improved so much it's now plump and glowing. The doctors are highly professional and explain every procedure in detail." },
-  { name: "Sai Sathish Rosh", time: 'GloSkin client', avatar: 'SS', color: '#7c3aed', text: "I'm absolutely delighted with the Glutathione treatment I received at the Mogappair branch! It has beautifully lightened my skin tone to a fair and radiant complexion. I wholeheartedly recommend this place." },
-  { name: "Jaya Kummar", time: 'HydraFacial client', avatar: 'JK', color: '#0891b2', text: "Treatments are good, 100% safe. I had a HydraFacial and was stunned with the result. Staff and doctors are very respectful, and I'm planning to have a medi facial next week." },
-  { name: "Sruti Shivam", time: 'HydraFacial client', avatar: 'SS', color: '#059669', text: "The staff was knowledgeable and attentive, and the atmosphere was relaxing. I went for a HydraFacial and my skin feels amazing. I highly recommend them!" },
-  { name: "Sumanth Ravi", time: 'Hair fall patient', avatar: 'SR', color: '#d97706', text: "I consulted Dr Nikitha for my hair fall problem. She explained everything and suggested the best treatment. This is my 4th session and I have visible results. Much recommended!" },
-  { name: "Arun Viran", time: 'GroHair client', avatar: 'AV', color: '#be185d', text: "I had a great experience with hair treatment in this clinic. I'll recommend the clinic and the doctors to everyone. Very hygienic and well maintained." },
+  { name: "Sneha Raji", time: 'GloSkin client', avatar: 'SR', color: '#c0001a', text: "Never thought I'd love my skin this much. Every session was pure magic — the glow is real." },
+  { name: "Bhavik Kumar", time: 'GroHair client', avatar: 'BK', color: '#7c3aed', text: "Professional, clean, and deeply caring. Warangal needed a place like this. Blessings!" },
+  { name: "Meera Laxmi", time: 'Acne care patient', avatar: 'ML', color: '#0891b2', text: "Doctor explained every detail with patience. My acne is gone and my confidence is back." },
+  { name: "Harish V", time: 'Hair restoration patient', avatar: 'HV', color: '#059669', text: "From bald spots to full locks — what a transformation! Truly life-changing care." },
 ]
 
 const Stars = () => (

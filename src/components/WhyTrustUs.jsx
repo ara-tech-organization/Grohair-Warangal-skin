@@ -33,7 +33,7 @@ export default function WhyTrustUs() {
       {/* ── Stats banner ── */}
       <div className="bg-gray-900 px-4 py-6">
         <h2 className="text-[20px] font-bold text-white text-center mb-5">
-          Why Trust <span className="text-red-400">Gloskin Mogappair?</span>
+          Why Trust <span className="text-red-400">Gloskin Warangal?</span>
         </h2>
         <div ref={statsRef} className="reveal-stagger grid grid-cols-3 gap-3">
           {stats.map((s) => (

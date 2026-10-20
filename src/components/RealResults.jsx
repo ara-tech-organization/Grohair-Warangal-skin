@@ -29,7 +29,7 @@ export default function RealResults() {
         <p className="text-[13px] text-gray-700 leading-relaxed italic mb-2">
           "I saw significant hair regrowth within 3 months of GFC treatment. Highly recommend the experts here!"
         </p>
-        <p className="text-[12px] font-bold text-gray-900">- Ramesh Kumar, Chennai</p>
+        <p className="text-[12px] font-bold text-gray-900">- Ramesh Kumar, Warangal</p>
       </div>
     </section>
   )

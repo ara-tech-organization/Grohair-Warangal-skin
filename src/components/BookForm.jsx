@@ -44,7 +44,7 @@ export default function BookForm({
         time: now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true }),
         treatment: form.treatment,
         message: `City: ${form.city}`,
-        source: 'Grohair Mogappair Skin Clinic Landing Page',
+        source: 'Grohair Warangal Skin Clinic Landing Page',
       }
 
       const res = await fetch('https://adgrohairclinicmogappair.com/api/email.php', {

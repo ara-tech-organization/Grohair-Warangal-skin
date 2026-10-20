@@ -7,8 +7,8 @@ const services = [
   { name: 'PRP Skin Rejuvenation', link: '#prp-skin' },
 ]
 
-const ADDRESS = 'No.8, 2nd floor, Bharathi Salai, above Polar Bear ice cream, Mogappair West, Ambattur Industrial Estate, Chennai, Tamil Nadu 600037'
-const MAP_EMBED_URL = 'https://maps.google.com/maps?q=Advanced%20GroHair%20%26%20GloSkin%20Clinic%20-%20Mogappair&t=m&z=15&output=embed&iwloc=near'
+const ADDRESS = 'Vaddiraj Complex, 1-8-526, Hyderabad – Warangal Hwy, beside Tirumala Music Centre, Nakkala Gutta, Hanamkonda, Telangana 506001'
+const MAP_EMBED_URL = 'https://www.google.com/maps?q=Advanced%20GroHair%20%26%20GloSkin%20Warangal%2C%20Vaddiraj%20Complex%2C%201-8-526%2C%20Hyderabad%20-%20Warangal%20Hwy%2C%20Nakkala%20Gutta%2C%20Hanamkonda%2C%20Telangana%20506001&output=embed'
 
 export default function Footer() {
   return (
@@ -38,18 +38,18 @@ export default function Footer() {
 
         <div className="flex flex-col gap-3">
           <h4 className="text-[14px] font-semibold text-white mb-1">Contact Us</h4>
-          <a href="mailto:mogappair@adgrohair.com" className="flex items-center gap-2.5 text-[13px] text-white/55 hover:text-red-400 active:text-red-400 transition-colors">
+          <a href="mailto:warangal@grohair.com" className="flex items-center gap-2.5 text-[13px] text-white/55 hover:text-red-400 active:text-red-400 transition-colors">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-4 h-4 shrink-0">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
             </svg>
-            <span>mogappair@adgrohair.com</span>
+            <span>warangal@grohair.com</span>
           </a>
-          <a href="tel:+918270956789" className="flex items-center gap-2.5 text-[13px] text-white/55 hover:text-red-400 active:text-red-400 transition-colors">
+          <a href="tel:+919418856789" className="flex items-center gap-2.5 text-[13px] text-white/55 hover:text-red-400 active:text-red-400 transition-colors">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-4 h-4 shrink-0">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.59 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l1.27-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
             </svg>
-            <span>+91 82709 56789</span>
+            <span>+91 94188 56789</span>
           </a>
           <div className="flex items-start gap-2.5 text-[13px] text-white/55">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-4 h-4 shrink-0 mt-0.5">
@@ -64,14 +64,14 @@ export default function Footer() {
       {/* ── Our Clinics ── */}
       <div id="locations" className="px-5 py-6 border-b border-white/10">
         <h4 className="text-[14px] font-semibold text-white mb-4">Our Clinics</h4>
-        <h5 className="text-[15px] font-extrabold text-white mb-2.5">Mogappair</h5>
+        <h5 className="text-[15px] font-extrabold text-white mb-2.5">Warangal</h5>
         <div className="aspect-[16/10] relative rounded-xl overflow-hidden">
           <iframe
             src={MAP_EMBED_URL}
             className="absolute inset-0 w-full h-full border-0"
             loading="lazy"
             referrerPolicy="strict-origin-when-cross-origin"
-            title="Grohair Mogappair Location"
+            title="Grohair Warangal Location"
           />
         </div>
       </div>

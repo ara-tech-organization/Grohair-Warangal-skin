@@ -30,7 +30,7 @@ export default function Header() {
       <div className="flex items-center gap-4 h-full" ref={menuRef}>
         {/* Phone icon button */}
         <a
-          href="tel:+918270956789"
+          href="tel:+919418856789"
           aria-label="Call us"
           onClick={() => {
             window.dataLayer = window.dataLayer || [];

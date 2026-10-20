@@ -78,7 +78,7 @@ export default function FacingSection() {
 
       {/* CTA link */}
       <a
-        href="tel:+918270956789"
+        href="tel:+919418856789"
         className="mt-5 flex items-center justify-center gap-2 text-red-700 text-[13px] font-semibold"
       >
         Talk to a doctor now

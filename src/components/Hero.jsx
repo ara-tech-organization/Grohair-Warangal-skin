@@ -23,7 +23,7 @@ export default function Hero() {
 
       <div className="relative z-10 px-5 py-12 text-center">
         <h1 className="text-[34px] leading-[1.2] font-extrabold text-white mb-2 drop-shadow-md">
-          Best <span className="text-white">Skin Clinic</span> in Mogappair
+          Best <span className="text-white">Skin Clinic</span> in Warangal
         </h1>
 
         {/* Trust badges */}
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
 
         <p className="text-[14px] text-white/75 mt-[18px] mb-1 drop-shadow-md">
-          Personalized skin treatments in Mogappair with expert dermatologists, offering professional solutions for acne, pigmentation, ageing, and other skin concerns.
+          Personalized skin treatments in Warangal with expert dermatologists, offering professional solutions for acne, pigmentation, ageing, and other skin concerns.
         </p>
 
         <button

@@ -11,7 +11,7 @@ export default function BookSection() {
     <section id="book" className="bg-[#F9FAFB] px-5 py-12 scroll-mt-20">
       <div className="max-w-[400px] mx-auto text-center mb-6">
         <h2 className="text-[24px] font-extrabold text-[#1A1A1A] leading-[1.28] mb-2.5">
-          Book a Consultation in <span className="text-primary">Mogappair</span>
+          Book a Consultation in <span className="text-primary">Warangal</span>
         </h2>
 
         <ul className="mt-5 text-left bg-primary/5 rounded-xl p-4 flex flex-col gap-3.5">
